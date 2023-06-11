@@ -1,40 +1,40 @@
 
 firstCard = {
-  prompt: "Isn't painting Wonderful???",
-  rightChoiceText: "I LOVE PAINTING",
+  prompt: "what is paint???",
+  rightChoiceText: "I like paint",
   rightChoice: function(){
-    addResource("veggies", 20)
-      addPackToDeck("bumbling")
+    addResource("panda happiness", 20)
+    addPackToDeck("petOwner")
     addToTopDeck("VanGoghHappy")
     },
   
   leftChoiceText: "PAINTING SUCKS", 
   leftChoice: function(){
-    addResource("meat", 20)
-      addPackToDeck("bumbling")
-    addToTopDeck("VanGoghBetrayed")
+    addResource("fox happiness", 20)
+    addPackToDeck("petOwner")
+   addToTopDeck("VanGoghBetrayed")
     enemiesMade += 1;
   },
   name: "Van Gogh",
   resultText: "",
-  image: "./images/VanGosh.png",
-  priority: 1,
-  pack : "none"
+  image: "./images/turtle.jpg",
+  priority: 2,
+  pack : "petOwner"
 }
 
 
 cardPool = {
-  "uniqueIDList" : ["VanGoghHappy", "VanGoghBetrayed"],
+  "uniqueIDList" : ["VanGoghHappy", "VanGoghBetrayed","hamburger","hotdog"],
   
   "VanGoghHappy" : {
     prompt: "Really? Let's be friends",
     rightChoiceText: "Lol Okay",
       rightChoice: function(){
-      addResource("veggies", 10)
+      addResource("panda happiness", 10)
       },
     leftChoiceText: "XD HAHA. . .No", 
     leftChoice: function(){
-      addResource("meat", 20)
+      addResource("fox happiness", 20)
       addToTopDeck("VanGoghBetrayed")
     enemiesMade += 1;
     },
@@ -50,18 +50,58 @@ cardPool = {
     prompt: "To Heck with you",
     rightChoiceText: ". . . ",
       rightChoice: function(){
-      addResource("veggies", 20)
+      addResource("panda happiness", 20)
+      addToTopDeck("hamburger")
       },
     leftChoiceText: "Fine. . . ", 
     leftChoice: function(){
-      addResource("meat", 100)
+      addResource("fox happiness", 100)
     },
     name: "Van Gogh",
     resultText: "",
     image: "./images/VanGosh.png",
     priority: 2,
     pack : "none"
-  }
+  },
+
+    "hamburger" : {
+    prompt: "Really? Let's be friends",
+    rightChoiceText: "Lol Okay",
+      rightChoice: function(){
+      addResource("panda happiness", 10)
+      },
+    leftChoiceText: "XD HAHA. . .No", 
+    leftChoice: function(){
+      addResource("fox happiness", 20)
+      addToTopDeck("hotdog")
+    enemiesMade += 1;
+    },
+    name: "Van Gogh",
+    resultText: "",
+    image: "./images/VanGosh.png",
+    priority: 2,
+    pack : "none"
+  },
+
+  "hotdog" : {
+    prompt: "Really? Let's be friends",
+    rightChoiceText: "Lol Okay",
+      rightChoice: function(){
+      addResource("panda happiness", 10)
+      },
+    leftChoiceText: "XD HAHA. . .No", 
+    leftChoice: function(){
+      addResource("fox happiness", 20)
+      //addToTopDeck("VanGoghBetrayed")
+    enemiesMade += 1;
+    },
+    name: "Van Gogh",
+    resultText: "",
+    image: "./images/fox.png",
+    priority: 2,
+    pack : "none"
+  },
+
 
 }
 

@@ -1,6 +1,10 @@
 let resources = [
-  {key: "meat", value: 40,image: "./images/meat.svg", },
-  {key: "veggies", value: 50, image: "./images/carrot.svg"}
+  {key: "fox happiness", value: 40,image: "./images/fox-head.svg" },
+  {key: "turtle happiness", value: 50, image: "./images/tortoise.svg"},
+  {key: "panda happiness", value: 50, image: "./images/panda.svg"},
+  {key: "corgi happiness", value: 50, image: "./images/labrador-head.svg"}
+  
+  
 ]
 
 function addResource(key, amount){
