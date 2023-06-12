@@ -28,11 +28,11 @@ cardPool = {
     prompt: "What a day to be alive",
     rightChoiceText: "Lol Okay",
       rightChoice: function(){
-      addResource("panda happiness", 10)
+      //addResource("panda happiness", 10)
       },
     leftChoiceText: "XD HAHA. . .No", 
     leftChoice: function(){
-      addResource("fox happiness", 20)
+      //addResource("fox happiness", 20)
       addToTopDeck("VanGoghBetrayed")
     enemiesMade += 1;
     },
@@ -48,12 +48,12 @@ cardPool = {
     prompt: "To Heck with you",
     rightChoiceText: ". . . ",
       rightChoice: function(){
-      addResource("panda happiness", 20)
+      //addResource("panda happiness", 20)
      // addToTopDeck("hamburger")
       },
     leftChoiceText: "Fine. . . ", 
     leftChoice: function(){
-      addResource("fox happiness", 100)
+      //addResource("fox happiness", 100)
     },
     name: "Van Gogh",
     resultText: "",
