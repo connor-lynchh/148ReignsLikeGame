@@ -1,8 +1,8 @@
 let resources = [
-  {key: "fox happiness", value: 40,image: "./images/fox-head.svg" },
+  {key: "fox happiness", value: 50,image: "./images/fox-head.svg" },
   {key: "turtle happiness", value: 50, image: "./images/tortoise.svg"},
   {key: "panda happiness", value: 50, image: "./images/panda.svg"},
-  {key: "corgi happiness", value: 50, image: "./images/labrador-head.svg"}
+  {key: "corgi happiness", value: 90, image: "./images/labrador-head.svg"}
   
   
 ]
@@ -37,8 +37,8 @@ function updateMeters() {
 function checkFail() {
   failures = []
     for (x in resources) {
-      if (resources[x].value > 100) {failures.push({resource: resources[x].key, level: "high"})}
-      if (resources[x].value < 0) {failures.push({rsource: resources[x].key, level: "low"})}
+      if (resources[x].value >= 100) {failures.push({resource: resources[x].key, level: "high"})}
+      if (resources[x].value < 0) {failures.push({resource: resources[x].key, level: "low"})}
   }
    console.log(failures)
   for (x in failures){
