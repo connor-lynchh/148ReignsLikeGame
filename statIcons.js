@@ -2,7 +2,7 @@ let resources = [
   {key: "fox happiness", value: 50,image: "./images/fox-head.svg" },
   {key: "turtle happiness", value: 50, image: "./images/tortoise.svg"},
   {key: "panda happiness", value: 50, image: "./images/panda.svg"},
-  {key: "corgi happiness", value: 90, image: "./images/labrador-head.svg"}
+  {key: "corgi happiness", value: 50, image: "./images/labrador-head.svg"}
   
   
 ]
