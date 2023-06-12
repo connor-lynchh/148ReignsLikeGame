@@ -1,33 +1,31 @@
 
 firstCard = {
-  prompt: "what is paint???",
+  prompt: "At home with my van gogh painting",
   rightChoiceText: "I like paint",
   rightChoice: function(){
-    addResource("panda happiness", 20)
     addPackToDeck("petOwner")
     addToTopDeck("VanGoghHappy")
     },
   
-  leftChoiceText: "PAINTING SUCKS", 
+  leftChoiceText: "What a wonderful word", 
   leftChoice: function(){
-    addResource("fox happiness", 20)
     addPackToDeck("petOwner")
    addToTopDeck("VanGoghBetrayed")
     enemiesMade += 1;
   },
   name: "Van Gogh",
   resultText: "",
-  image: "./images/turtle.jpg",
+  image: "./images/VanGosh.png",
   priority: 2,
   pack : "petOwner"
 }
 
 
 cardPool = {
-  "uniqueIDList" : ["VanGoghHappy", "VanGoghBetrayed","hamburger","hotdog"],
+  "uniqueIDList" : ["VanGoghHappy", "VanGoghBetrayed"],
   
   "VanGoghHappy" : {
-    prompt: "Really? Let's be friends",
+    prompt: "What a day to be alive",
     rightChoiceText: "Lol Okay",
       rightChoice: function(){
       addResource("panda happiness", 10)
@@ -51,7 +49,7 @@ cardPool = {
     rightChoiceText: ". . . ",
       rightChoice: function(){
       addResource("panda happiness", 20)
-      addToTopDeck("hamburger")
+     // addToTopDeck("hamburger")
       },
     leftChoiceText: "Fine. . . ", 
     leftChoice: function(){
@@ -64,7 +62,7 @@ cardPool = {
     pack : "none"
   },
 
-    "hamburger" : {
+  /*  "hamburger" : {
     prompt: "Really? Let's be friends",
     rightChoiceText: "Lol Okay",
       rightChoice: function(){
@@ -100,7 +98,7 @@ cardPool = {
     image: "./images/fox.png",
     priority: 2,
     pack : "none"
-  },
+  },*/
 
 
 }

@@ -12,7 +12,7 @@ failCards = [{
     },
     name: "VeggieDoom ",
     resultText: "",
-    image: "./images/legumes.jpg"
+    image: "./images/manyFoxes.jpg"
   }  ,
 
   resource:"panda happiness", 
@@ -28,7 +28,7 @@ failCards = [{
     },
     name: "VeggieDoom ",
     resultText: "",
-    image: "./images/legumes.jpg"
+    image: "./images/manyPandas.jpg"
   }  ,
 
   resource:"turtle happiness", 
@@ -44,7 +44,7 @@ failCards = [{
     },
     name: "VeggieDoom ",
     resultText: "",
-    image: "./images/legumes.jpg"
+    image: "./images/ManyTurtles.jpg"
   }  ,
 
   resource:"corgi happiness", 
@@ -60,20 +60,19 @@ failCards = [{
     },
     name: "VeggieDoom ",
     resultText: "",
-    image: "./images/legumes.jpg"
+    image: "./images/manyCorgis.jpg"
   }  
 }]
 
 defaultFailCard = {
-  prompt: "I don't know what you did wrong, but it was something",
+  prompt: "I know you can take care of these animals. Give it another go",
   rightChoiceText: "oops",
   rightChoice: function(){location.reload();
     },
   
-  leftChoiceText: "PAINTING SUCKS", 
+  leftChoiceText: "time to focus", 
   leftChoice: function(){location.reload();
   },
   name: "Narrator",
-  resultText: "You made a mistake",
-  image: "./images/legumes.jpg"
+  image: "./images/wolfLaugh.jpg"
 }
